@@ -57,6 +57,25 @@ rake spec
 
 This will test whether all the dependencies have been properly installed
 
+## Running the webpages
+
+The urls are as follows
+### Homepage
+```
+development.local
+```
+### Fibonacci
+This returns the number in the the second position of the fibonacci sequence. 2 can be changed for any input upto the stack limit
+```
+development.local/fibonacci/2
+```
+
+### Posts
+This 
+```
+development.local/posts
+```
+
 ## Authors
 
 * **Ibrahim Bocus** - *Initial work* - [SpartaGlobal](www.spartaglobal.com)
