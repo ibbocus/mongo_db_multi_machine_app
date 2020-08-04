@@ -67,22 +67,22 @@ This will test whether all the dependencies have been properly installed
 
 ## Additional Information
 
-# Nginx Reverse Proxy 
+## Nginx Reverse Proxy 
 
-# What is Nginx?
+## What is Nginx?
 - Nginx is an open source high performance web server (stores, processes and delivers web pages to users) that powers many modern web applications. 
 
-## What is a reverse proxy?
+### What is a reverse proxy?
 - A server that sits in front of web servers and forwards clients requests (e.g. web browser) to those web servers.
 - Reverse proxies are typically implemented to help increase security, performance and reliability.
 
-## What is a proxy server?
+### What is a proxy server?
 - A forward proxy, often called a proxy, proxy server, web proxy, is a server that sits in front of a group of client machines
 - When those computers make requests to sites and services on the Internet, the proxy server intercepts those requests and then communicates with web servers on behalf of those clients, like an intermediary. 
 
 
 
-## Reverse Proxy
+### Reverse Proxy
 - A reverse proxy is a server that sits in front of one or more web servers, intercepting requests from clients
 
 
@@ -106,14 +106,11 @@ sudo service nginx restart
 
 
 
-# Restart `NGINX` in order to effect changes
+### Restart `NGINX` in order to effect changes
 ```bash
 sudo systemctl start nginx
 sudo systemctl stop nginx
 sudo systemctl restart nginx
 ```
 
-
-Due to the provisions.sh running during the vagrant up process the app will automaticall run due to pm2 start app.js
-Therefore nothing has to be done once vagrant up is run
 
