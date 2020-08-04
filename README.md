@@ -47,3 +47,75 @@ sudo systemctl restart nginx
 
 Due to the provisions.sh running during the vagrant up process the app will automaticall run due to pm2 start app.js
 Therefore nothing has to be done once vagrant up is run
+
+
+
+
+
+# Sparta App
+This app includes 3 pages
+- The home page showing you have connected to the sparta app
+- A page allowing you to see a number at a specific position within the fibonacci sequence
+- A page which pulls from a randomly formed database to produce a page of posts
+
+## Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+
+### Prerequisites
+
+What things you need to install the software and how to install them
+
+```
+Ruby
+  - Bundler
+Virtual Box
+Vagrant
+```
+
+### Installing
+
+Within the directory containing Vagrantfile
+``` /mongodb-multi-machine/solution-code ```
+
+Run:
+```
+vagrant up
+```
+
+This will result in the app automatically initialising.
+
+To obtain further information run:
+
+``` 
+vagrant ssh app
+```
+
+Then once inside the vm
+
+```
+cd /home/ubuntu/app
+pm2 status
+```
+
+This will allow you to troubleshoot whether the app is running
+## Running the tests
+
+Within the directory named tests
+``` /mongodb-multi-machine/solution-code/tests ```
+
+Run the following line:
+```
+rake spec
+```
+
+This will test whether all the dependencies have been properly installed
+
+## Authors
+
+* **Ibrahim Bocus** - *Initial work* - [SpartaGlobal](www.spartaglobal.com)
+
+
+## Acknowledgments
+* Thank you to Sparta Global for providing the base code to produce this app
+
